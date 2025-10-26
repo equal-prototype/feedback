@@ -120,10 +120,7 @@ class _DraggableFeedbackSheetState extends State<_DraggableFeedbackSheet> {
                 valueListenable: widget.sheetProgress,
                 builder: (context, _, child) {
                   return ClipRRect(
-                    borderRadius: BorderRadius.vertical(
-                      top: Radius.circular(
-                          20 * (1 - widget.sheetProgress.value)),
-                    ),
+                    borderRadius: BorderRadius.zero,
                     child: child,
                   );
                 },

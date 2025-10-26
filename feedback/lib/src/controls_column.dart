@@ -40,9 +40,7 @@ class ControlsColumn extends StatelessWidget {
     return Card(
       margin: EdgeInsets.zero,
       shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.all(
-          Radius.circular(24),
-        ),
+        borderRadius: BorderRadius.zero,
       ),
       clipBehavior: Clip.antiAlias,
       child: Wrap(
