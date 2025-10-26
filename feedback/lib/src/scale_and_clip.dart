@@ -18,11 +18,7 @@ class ScaleAndClip extends StatelessWidget {
     return Transform.scale(
       scale: 1 - progress * (1 - scaleFactor),
       child: ClipRRect(
-        borderRadius: BorderRadius.all(
-          Radius.circular(
-            20 * progress,
-          ),
-        ),
+        borderRadius: BorderRadius.zero,
         child: child,
       ),
     );
