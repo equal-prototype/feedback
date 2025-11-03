@@ -124,6 +124,8 @@ class FeedbackWidgetState extends State<FeedbackWidget>
       _controller.reverse();
       // Reset the sheet progress so the fade is no longer applied.
       sheetProgress.value = 0;
+      // Clear all drawings when closing the feedback
+      painterController.clear();
     }
   }
 
